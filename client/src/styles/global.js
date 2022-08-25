@@ -22,6 +22,17 @@ export default createGlobalStyle`
     outline: none;
   }
 
+  input {
+    border: 0.1rem solid ${({ theme }) => theme.COLORS.GRAY_500};
+    border-radius: 0.4rem;
+    padding: 0.8rem 0.6rem;
+    font-size: 1.6rem;
+  }
+
+  input:focus {
+    border: 0.1rem solid ${({ theme }) => theme.COLORS.BLUE_500};
+  }
+
   a {
     text-decoration: none;
     color: ${({ theme }) => theme.COLORS.WHITE_500};

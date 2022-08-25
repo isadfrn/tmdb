@@ -1,7 +1,7 @@
 import logoS from '../../assets/img/logo-s.svg';
 
 import { useState } from 'react';
-import { FiMenu, FiUser } from 'react-icons/fi';
+import { FiMenu, FiUser, FiX } from 'react-icons/fi';
 
 import { Container, Icons, MenuBody } from './style';
 
@@ -19,6 +19,9 @@ export function MobileMenu() {
   function MobileMenuOpen() {
     return (
       <MenuBody>
+        <button onClick={handleOpenMenu}>
+          <FiX />
+        </button>
         <a href="#">
           <strong>Movies</strong>
         </a>
@@ -32,7 +35,7 @@ export function MobileMenu() {
   }
 
   return (
-    <Container>
+    <Container onClick={handleOpenMenu}>
       <Icons>
         <button>
           <FiMenu onClick={handleOpenMenu} />

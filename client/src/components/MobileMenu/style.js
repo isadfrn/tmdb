@@ -36,14 +36,24 @@ export const MenuBody = styled.div`
   position: absolute;
   top: 0;
   left: 0rem;
-  z-index: -1;
+  z-index: 1;
   overflow: hidden;
 
   animation-name: slide;
-  animation-duration: 300ms;
+  animation-duration: 600ms;
+  transition: all 600ms ease-in;
 
   > a {
     padding-bottom: 1rem;
+  }
+
+  > button {
+    background: none;
+    border: none;
+    color: ${({ theme }) => theme.COLORS.WHITE_500};
+    font-size: 2.5rem;
+    position: absolute;
+    top: 2rem;
   }
 
   @keyframes slide {
