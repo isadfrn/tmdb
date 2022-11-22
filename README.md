@@ -8,23 +8,9 @@
 
 A simple clone of The Movie Database with front and back-end.
 
-## Run
-
-First install all dependencies from both [server](./server/) and [client](./client/):
-
-```
-npm install
-```
-
-Then run each project with:
-
-```
-npm run start
-```
-
 ## Status
 
-In progress 🚧
+Building 🚧
 
 ## License
 
